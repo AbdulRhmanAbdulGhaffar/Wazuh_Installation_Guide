@@ -114,8 +114,7 @@ Default credentials:
 - **Username:** "admin"
 - **Password:** "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-[![Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png](https://i.postimg.cc/BQm75dTH/Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png)](https://postimg.cc/MvjYq3rp)
----
+[![Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png](https://i.postimg.cc/PfYPwHkV/Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png)](https://postimg.cc/bdYz7Kr1)---
 
 ## ✅ Final Result
 - Wazuh Dashboard running successfully 🎉
