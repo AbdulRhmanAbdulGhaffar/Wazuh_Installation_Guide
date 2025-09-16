@@ -80,6 +80,30 @@ ifconfig
 [![Virtual-Box-SIEM-Machine-16-09-2025-02-29-43.png](https://i.postimg.cc/3rZqLyXs/Virtual-Box-SIEM-Machine-16-09-2025-02-29-43.png)](https://postimg.cc/z3VpvGP7)
 ---
 
+### ⚠️ First-Time Browser Warning  
+
+When you first access the Wazuh dashboard using your server IP, your browser will show a **security warning**.  
+This is because Wazuh uses a **self-signed SSL certificate** by default.  
+
+To continue:  
+
+1. Click **Advanced...**  
+2. Then click **Accept the Risk and Continue** (or **Proceed to <your-ip>**)  
+
+[![Virtual-Box-SIEM-Machine-16-09-2025-02-30-05.png](https://i.postimg.cc/02bLbkSh/Virtual-Box-SIEM-Machine-16-09-2025-02-30-05.png)](https://postimg.cc/vcwPKd3v)  
+---
+### 🔑 Wazuh Login Page  
+
+After accepting the browser security warning, you will be redirected to the **Wazuh login page**.  
+
+Here you need to enter your credentials:  
+
+- **Username:** `admin`  
+- **Password:** shown during installation (or retrieved from the `wazuh-passwords.txt` file).  
+
+[![Virtual-Box-SIEM-Machine-16-09-2025-00-34-43.png](https://i.postimg.cc/KzshHRLr/Virtual-Box-SIEM-Machine-16-09-2025-00-34-43.png)](https://postimg.cc/dkdf7Q5L) 
+
+---
 ### 6️⃣ Retrieve Credentials (If Not Displayed)
 Run:
 ```bash
