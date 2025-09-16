@@ -103,6 +103,8 @@ Default credentials:
 
 📷 *Add final screenshot of Wazuh dashboard here*
 
+[![Virtual-Box-SIEM-Machine-16-09-2025-00-36-47.png](https://i.postimg.cc/dVfmHFSP/Virtual-Box-SIEM-Machine-16-09-2025-00-36-47.png)](https://postimg.cc/VJjCvx8D)
+
 ---
 
 ## 🎯 Congratulations!
