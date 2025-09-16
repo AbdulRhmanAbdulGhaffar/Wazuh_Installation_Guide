@@ -33,8 +33,6 @@ Wazuh can be installed on:
 - Mount the Ubuntu ISO.  
 - Install Ubuntu normally.  
 
-📸 *Screenshot: Ubuntu installation*  
-
 ![VM Setup](https://i.postimg.cc/hGbvJbmy/Screenshot-2025-09-16-032928.png)
 
 ---
@@ -46,8 +44,6 @@ sudo apt update
 sudo apt install curl -y
 ```
 
-📸 *Screenshot: Updating Ubuntu*  
-
 ![Update Terminal](https://i.postimg.cc/cCQ0jdcD/Virtual-Box-SIEM-Machine-16-09-2025-03-35-09.png)
 
 ---
@@ -57,9 +53,7 @@ sudo apt install curl -y
 sudo curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 ```
 
-⏳ This may take several minutes.  
-
-📸 *Screenshot: Wazuh installation process*  
+⏳ This may take several minutes.   
 
 ![Install Wazuh](https://i.postimg.cc/y6FK7YFj/Screenshot-2025-09-16-003344.png)
 
@@ -73,9 +67,7 @@ ip a
 or
 ```bash
 ifconfig
-```
-
-📸 *Screenshot: Checking IP address*  
+``` 
 
 ![IP Address](https://i.postimg.cc/JhDwv1rb/Virtual-Box-SIEM-Machine-16-09-2025-02-31-51.png)
 
@@ -91,8 +83,6 @@ ifconfig
   https://192.168.1.xx
   ```
 
-📸 *Screenshot: Accessing dashboard* 
-
 ![Dashboard Access](https://i.postimg.cc/3rZqLyXs/Virtual-Box-SIEM-Machine-16-09-2025-02-29-43.png)
 
 ---
@@ -104,8 +94,6 @@ When you first access the Wazuh dashboard, your browser will show a **security w
 1. Click **Advanced...**  
 2. Click **Accept the Risk and Continue**  
 
-📸 *Screenshot: Browser warning* 
-
 ![Browser Warning](https://i.postimg.cc/02bLbkSh/Virtual-Box-SIEM-Machine-16-09-2025-02-30-05.png)
 
 ---
@@ -116,9 +104,7 @@ After bypassing the security warning, you will be redirected to the **Wazuh logi
 Credentials:  
 - **Username:** `admin`  
 - **Password:** retrieved after installation or from `wazuh-passwords.txt`.  
-
-📸 *Screenshot: Login page*  
-
+ 
 ![Login Page](https://i.postimg.cc/KzshHRLr/Virtual-Box-SIEM-Machine-16-09-2025-00-34-43.png)
 
 ---
@@ -133,16 +119,12 @@ Default output:
 - **Username:** `admin`  
 - **Password:** `xxxxxxxxxxxxxxxxxxxxxxxxxxxx`
 
-📸 *Screenshot: Retrieving credentials*  
-
 ![Credentials](https://i.postimg.cc/PfYPwHkV/Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png)
 
 ---
 
 ## ✅ Final Result
 If everything is correct, you should now see the **Wazuh Dashboard** 🎉  
-
-📸 *Screenshot: Final dashboard*  
 
 ![Final Dashboard](https://i.postimg.cc/dVfmHFSP/Virtual-Box-SIEM-Machine-16-09-2025-00-36-47.png)
 
