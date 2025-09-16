@@ -56,9 +56,7 @@ sudo curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wa
 ⏳ This may take several minutes.   
 
 ![Install Wazuh](https://i.postimg.cc/y6FK7YFj/Screenshot-2025-09-16-003344.png)
-
 ---
-
 ### 4️⃣ Get Server IP
 Run:
 ```bash
