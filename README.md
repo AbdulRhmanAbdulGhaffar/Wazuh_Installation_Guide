@@ -91,17 +91,16 @@ sudo tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
 ```
 
 Default credentials:
-- **Username:** admin
-- **Password:** (shown in file)
+- **Username:** "admin"
+- **Password:** "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-📷 *Add screenshot of credentials file here*
+[![Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png](https://i.postimg.cc/ZYjNsZC7/Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png)](https://postimg.cc/xqJqqwGM)
 
 ---
 
 ## ✅ Final Result
 - Wazuh Dashboard running successfully 🎉
 
-📷 *Add final screenshot of Wazuh dashboard here*
 
 [![Virtual-Box-SIEM-Machine-16-09-2025-00-36-47.png](https://i.postimg.cc/dVfmHFSP/Virtual-Box-SIEM-Machine-16-09-2025-00-36-47.png)](https://postimg.cc/VJjCvx8D)
 
