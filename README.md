@@ -31,7 +31,7 @@ Wazuh can be installed on:
 - Mount the Ubuntu ISO.
 - Install Ubuntu normally.
 
-📷 *Add screenshot of VM setup here*
+[![Screenshot-2025-09-16-032928.png](https://i.postimg.cc/hGbvJbmy/Screenshot-2025-09-16-032928.png)](https://postimg.cc/f3yDpdBm)
 
 ---
 
@@ -43,8 +43,7 @@ sudo apt update
 sudo apt install curl -y
 ```
 
-📷 *Add screenshot of terminal commands here*
-
+[![Virtual-Box-SIEM-Machine-16-09-2025-03-35-09.png](https://i.postimg.cc/cCQ0jdcD/Virtual-Box-SIEM-Machine-16-09-2025-03-35-09.png)](https://postimg.cc/XB7RBSmF)
 ---
 
 ### 3️⃣ Install Wazuh (Quickstart)
@@ -55,8 +54,7 @@ sudo curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wa
 
 ⏳ This process takes some time. Be patient.
 
-📷 *Add screenshot of installation progress here*
-
+[![Screenshot-2025-09-16-003344.png](https://i.postimg.cc/y6FK7YFj/Screenshot-2025-09-16-003344.png)](https://postimg.cc/YjqZ37DL)
 ---
 
 ### 4️⃣ Get Server IP
@@ -69,8 +67,7 @@ OR
 ifconfig
 ```
 
-📷 *Add screenshot of IP command output here*
-
+[![Virtual-Box-SIEM-Machine-16-09-2025-02-31-51.png](https://i.postimg.cc/JhDwv1rb/Virtual-Box-SIEM-Machine-16-09-2025-02-31-51.png)](https://postimg.cc/hJB37R7j)
 ---
 
 ### 5️⃣ Access Wazuh Dashboard
@@ -80,8 +77,7 @@ ifconfig
   ```
 - Login with credentials shown after installation.
 
-📷 *Add screenshot of login page here*
-
+[![Virtual-Box-SIEM-Machine-16-09-2025-02-29-43.png](https://i.postimg.cc/3rZqLyXs/Virtual-Box-SIEM-Machine-16-09-2025-02-29-43.png)](https://postimg.cc/z3VpvGP7)
 ---
 
 ### 6️⃣ Retrieve Credentials (If Not Displayed)
