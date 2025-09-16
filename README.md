@@ -114,8 +114,7 @@ Default credentials:
 - **Username:** "admin"
 - **Password:** "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-[![Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png](https://i.postimg.cc/ZYjNsZC7/Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png)](https://postimg.cc/xqJqqwGM)
-
+[![Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png](https://i.postimg.cc/BQm75dTH/Virtual-Box-SIEM-Machine-16-09-2025-02-31-31.png)](https://postimg.cc/MvjYq3rp)
 ---
 
 ## ✅ Final Result
