@@ -1,125 +1,109 @@
+# Wazuh Installation Guide
 
-# 🚀 تثبيت Wazuh على Ubuntu
-
-هذا الدليل يشرح خطوة بخطوة كيفية تثبيت Wazuh على نظام Ubuntu داخل VirtualBox أو VMware.  
-هيكون معاه صور توضيحية (أضف لقطات شاشة في الأماكن المحددة).  
-
----
-
-## 1️⃣ المتطلبات الأساسية
-
-قبل ما تبدأ لازم تتأكد إنك على نظام تشغيل مدعوم:  
-
-- Amazon Linux 2, 2023  
-- CentOS 7, 8  
-- Red Hat Enterprise Linux 7, 8, 9  
-- Ubuntu 16.04, 18.04, 20.04, 22.04, 24.04  
-
-⚡ النسخة المستخدمة:  
-[Ubuntu 20.04.6 Desktop](https://releases.ubuntu.com/20.04/ubuntu-20.04.6-desktop-amd64.iso)  
-
-📥 لتحميل VirtualBox: [VirtualBox Official Site](https://www.virtualbox.org/)  
-
-📸 *لقطة شاشة: شاشة تحميل Ubuntu*  
+## 📌 Description
+This repository provides a **step-by-step guide** to install **Wazuh** on Ubuntu using VirtualBox or VMware. It covers environment setup, installation, and accessing the Wazuh dashboard.
 
 ---
 
-## 2️⃣ إعداد الجهاز الافتراضي (VM)
-
-- مساحة القرص: **40GB**  
-- الذاكرة (RAM): **4GB** على الأقل  
-- عدد المعالجات (CPU): **3** أو أكثر  
-
-📸 *لقطة شاشة: إعدادات VirtualBox أو VMware*  
+## ⚙️ Requirements
+- VirtualBox 👉 [Download here](https://www.virtualbox.org/)
+- Ubuntu ISO 👉 [Ubuntu 20.04.6 LTS](https://releases.ubuntu.com/20.04/ubuntu-20.04.6-desktop-amd64.iso)
+- System resources:
+  - Disk space: **40 GB**
+  - RAM: **4 GB minimum**
+  - CPU: **3 cores**
 
 ---
 
-## 3️⃣ تحديث النظام
+## 🖥️ Supported Operating Systems
+Wazuh can be installed on:
+- Amazon Linux 2, Amazon Linux 2023
+- CentOS 7, 8
+- Red Hat Enterprise Linux 7, 8, 9
+- Ubuntu 16.04, 18.04, 20.04, 22.04, 24.04
 
-بعد ما Ubuntu يفتح، افتح **Terminal** واكتب:  
+---
 
+## 🚀 Installation Steps
+
+### 1️⃣ Setup Virtual Machine
+- Create a VM with **40GB disk**, **4GB RAM**, and **3 CPUs**.
+- Mount the Ubuntu ISO.
+- Install Ubuntu normally.
+
+📷 *Add screenshot of VM setup here*
+
+---
+
+### 2️⃣ Open Terminal
+Run:
 ```bash
 sudo su
 sudo apt update
 sudo apt install curl -y
 ```
 
-📸 *لقطة شاشة: أوامر التحديث في الـ Terminal*  
+📷 *Add screenshot of terminal commands here*
 
 ---
 
-## 4️⃣ تثبيت Wazuh (Quickstart)
-
-نزّل وشغّل أداة التثبيت:  
-
+### 3️⃣ Install Wazuh (Quickstart)
+Run:
 ```bash
 sudo curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 ```
 
-⚠️ العملية هتاخد وقت، متقلقش.  
+⏳ This process takes some time. Be patient.
 
-📸 *لقطة شاشة: أثناء تثبيت Wazuh*  
+📷 *Add screenshot of installation progress here*
 
 ---
 
-## 5️⃣ معرفة عنوان السيرفر (IP Address)
-
+### 4️⃣ Get Server IP
+Run:
 ```bash
 ip a
 ```
-
-أو:  
-
+OR
 ```bash
 ifconfig
 ```
 
-📸 *لقطة شاشة: نتيجة أمر ip a*  
+📷 *Add screenshot of IP command output here*
 
 ---
 
-## 6️⃣ الدخول على واجهة Wazuh
+### 5️⃣ Access Wazuh Dashboard
+- Open browser → enter your server IP
+  ```
+  http://192.168.1.xx
+  ```
+- Login with credentials shown after installation.
 
-افتح المتصفح واكتب:  
+📷 *Add screenshot of login page here*
 
-```
-http://<your-server-ip>
-```
+---
 
-مثال:  
-```
-http://192.168.1.20
-```
-
-📸 *لقطة شاشة: صفحة تسجيل الدخول*  
-
-- **Username**: admin  
-- **Password**: بيظهر أثناء التثبيت  
-
-لو نسيته:  
-
+### 6️⃣ Retrieve Credentials (If Not Displayed)
+Run:
 ```bash
 sudo tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
 ```
 
-📸 *لقطة شاشة: ملف كلمات المرور (Username + Password)*  
+Default credentials:
+- **Username:** admin
+- **Password:** (shown in file)
+
+📷 *Add screenshot of credentials file here*
 
 ---
 
-## 7️⃣ 🎉 مبروك
+## ✅ Final Result
+- Wazuh Dashboard running successfully 🎉
 
-كده Wazuh شغال عندك، تقدر تبدأ تستخدم لوحة التحكم وتحلل الأحداث.  
-
-📸 *لقطة شاشة: واجهة Wazuh بعد تسجيل الدخول*  
-📸 *لقطة شاشة نهائية لنجاح التثبيت*  
+📷 *Add final screenshot of Wazuh dashboard here*
 
 ---
 
-## 📌 ملاحظات
-
-- يفضل يكون الجهاز متصل بالإنترنت طول التثبيت.  
-- لو حصلت أي مشكلة في الخطوات، راجع اللوجات أو جرّب إعادة التثبيت.  
-
----
-
-✍️ **أعدّ بواسطة**: [اسمك هنا]  
+## 🎯 Congratulations!
+You have successfully installed **Wazuh** on Ubuntu using VirtualBox/VMware.
