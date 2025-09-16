@@ -13,13 +13,19 @@ It covers **environment setup, installation commands, accessing the Wazuh dashbo
   - Disk space: **40 GB**
   - RAM: **4 GB minimum**
   - CPU: **3 cores**
- 
+---
+
 ## Installing Ubuntu on VirtualBox (For Beginners)
 
 If you are new to VirtualBox and Ubuntu, you can follow this beginner-friendly tutorial to install Ubuntu step by step:
 
 👉 [Watch the video on YouTube](https://youtu.be/-1S5qisIx8I?si=161dtzEUATqawGbW)
 
+⚠️ **Important Note:**  
+Before starting the installation, make sure your Virtual Machine has the required resources to avoid problems later:
+- **Disk space:** at least 40 GB  
+- **RAM:** minimum 4 GB  
+- **CPU:** 3 cores or more  
 
 ---
 
